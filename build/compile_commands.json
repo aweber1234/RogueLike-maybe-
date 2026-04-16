@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/andrew/Documents/Coding/C_Language/roguelike/build",
+  "command": "/usr/bin/cc -D_XOPEN_SOURCE=700   -o CMakeFiles/rogueLike.dir/main.c.o -c /home/andrew/Documents/Coding/C_Language/roguelike/main.c",
+  "file": "/home/andrew/Documents/Coding/C_Language/roguelike/main.c",
+  "output": "CMakeFiles/rogueLike.dir/main.c.o"
+},
+{
+  "directory": "/home/andrew/Documents/Coding/C_Language/roguelike/build",
+  "command": "/usr/bin/cc -D_XOPEN_SOURCE=700   -o CMakeFiles/rogueLike.dir/functions.c.o -c /home/andrew/Documents/Coding/C_Language/roguelike/functions.c",
+  "file": "/home/andrew/Documents/Coding/C_Language/roguelike/functions.c",
+  "output": "CMakeFiles/rogueLike.dir/functions.c.o"
+}
+]
