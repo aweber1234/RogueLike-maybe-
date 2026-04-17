@@ -136,29 +136,29 @@ rogueLike/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/build
 .PHONY : rogueLike/fast
 
-functions.o: functions.c.o
-.PHONY : functions.o
+gameFunctions.o: gameFunctions.c.o
+.PHONY : gameFunctions.o
 
 # target to build an object file
-functions.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/functions.c.o
-.PHONY : functions.c.o
+gameFunctions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/gameFunctions.c.o
+.PHONY : gameFunctions.c.o
 
-functions.i: functions.c.i
-.PHONY : functions.i
+gameFunctions.i: gameFunctions.c.i
+.PHONY : gameFunctions.i
 
 # target to preprocess a source file
-functions.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/functions.c.i
-.PHONY : functions.c.i
+gameFunctions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/gameFunctions.c.i
+.PHONY : gameFunctions.c.i
 
-functions.s: functions.c.s
-.PHONY : functions.s
+gameFunctions.s: gameFunctions.c.s
+.PHONY : gameFunctions.s
 
 # target to generate assembly for a file
-functions.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/functions.c.s
-.PHONY : functions.c.s
+gameFunctions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/gameFunctions.c.s
+.PHONY : gameFunctions.c.s
 
 main.o: main.c.o
 .PHONY : main.o
@@ -184,6 +184,30 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/main.c.s
 .PHONY : main.c.s
 
+toolFunctions.o: toolFunctions.c.o
+.PHONY : toolFunctions.o
+
+# target to build an object file
+toolFunctions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/toolFunctions.c.o
+.PHONY : toolFunctions.c.o
+
+toolFunctions.i: toolFunctions.c.i
+.PHONY : toolFunctions.i
+
+# target to preprocess a source file
+toolFunctions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/toolFunctions.c.i
+.PHONY : toolFunctions.c.i
+
+toolFunctions.s: toolFunctions.c.s
+.PHONY : toolFunctions.s
+
+# target to generate assembly for a file
+toolFunctions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/toolFunctions.c.s
+.PHONY : toolFunctions.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -194,12 +218,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... rogueLike"
-	@echo "... functions.o"
-	@echo "... functions.i"
-	@echo "... functions.s"
+	@echo "... gameFunctions.o"
+	@echo "... gameFunctions.i"
+	@echo "... gameFunctions.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... toolFunctions.o"
+	@echo "... toolFunctions.i"
+	@echo "... toolFunctions.s"
 .PHONY : help
 
 

@@ -85,12 +85,12 @@ clean: CMakeFiles/rogueLike.dir/clean
 CMakeFiles/rogueLike.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/andrew/Documents/Coding/C_Language/roguelike/build/CMakeFiles --progress-num=1,2,3 "Built target rogueLike"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/andrew/Documents/Coding/C_Language/roguelike/build/CMakeFiles --progress-num=1,2,3,4 "Built target rogueLike"
 .PHONY : CMakeFiles/rogueLike.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rogueLike.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/Documents/Coding/C_Language/roguelike/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/Documents/Coding/C_Language/roguelike/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rogueLike.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/andrew/Documents/Coding/C_Language/roguelike/build/CMakeFiles 0
 .PHONY : CMakeFiles/rogueLike.dir/rule
@@ -102,7 +102,7 @@ rogueLike: CMakeFiles/rogueLike.dir/rule
 # codegen rule for target.
 CMakeFiles/rogueLike.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/andrew/Documents/Coding/C_Language/roguelike/build/CMakeFiles --progress-num=1,2,3 "Finished codegen for target rogueLike"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/andrew/Documents/Coding/C_Language/roguelike/build/CMakeFiles --progress-num=1,2,3,4 "Finished codegen for target rogueLike"
 .PHONY : CMakeFiles/rogueLike.dir/codegen
 
 # clean rule for target.

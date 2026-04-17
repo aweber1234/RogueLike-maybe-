@@ -1,1 +1,1 @@
-/usr/bin/cc -Wl,--dependency-file=CMakeFiles/rogueLike.dir/link.d CMakeFiles/rogueLike.dir/main.c.o CMakeFiles/rogueLike.dir/functions.c.o -o rogueLike  -lncursesw
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/rogueLike.dir/link.d CMakeFiles/rogueLike.dir/main.c.o CMakeFiles/rogueLike.dir/toolFunctions.c.o CMakeFiles/rogueLike.dir/gameFunctions.c.o -o rogueLike  -lncursesw

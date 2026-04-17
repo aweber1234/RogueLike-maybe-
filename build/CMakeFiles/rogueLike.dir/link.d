@@ -3,7 +3,8 @@ rogueLike: \
   /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o \
   /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o \
   CMakeFiles/rogueLike.dir/main.c.o \
-  CMakeFiles/rogueLike.dir/functions.c.o \
+  CMakeFiles/rogueLike.dir/toolFunctions.c.o \
+  CMakeFiles/rogueLike.dir/gameFunctions.c.o \
   /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libncursesw.so \
   /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libncursesw.so \
   /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libncursesw.so \
@@ -39,7 +40,9 @@ rogueLike: \
 
 CMakeFiles/rogueLike.dir/main.c.o:
 
-CMakeFiles/rogueLike.dir/functions.c.o:
+CMakeFiles/rogueLike.dir/toolFunctions.c.o:
+
+CMakeFiles/rogueLike.dir/gameFunctions.c.o:
 
 /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libncursesw.so:
 

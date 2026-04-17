@@ -1,32 +1,45 @@
+#pragma once
 #ifndef TYPE_DEFINITIONS_H
 #define TYPE_DEFINITIONS_H
 
 #include <ncursesw/ncurses.h>
 
-#pragma once
-
-//type definitions
+// type definitions
 //___________________________________________________________
 
-typedef struct
+typedef enum
 {
-  int xPos, yPos;
-  wchar_t symbol;
-}Player;
+  NONE,
+  WALL,
+  OPEN
+} TileType;
+
+typedef enum
+{
+  LEFT,
+  RIGHT,
+  UP,
+  DOWN
+}Direction;
 
 typedef struct
 {
   int xPos, yPos;
   wchar_t symbol;
-}TileType;
+} Player;
+
+typedef struct
+{
+  int xPos, yPos;
+  wchar_t symbol;
+  TileType type;
+} Tile;
 
 typedef struct
 {
   int width, height, size;
-  TileType *tiles;
+  Tile *tiles;
 
-}MapType;
-
-
+} GameMap;
 
 #endif

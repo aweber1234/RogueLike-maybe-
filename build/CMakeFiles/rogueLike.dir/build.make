@@ -86,34 +86,50 @@ CMakeFiles/rogueLike.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rogueLike.dir/main.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andrew/Documents/Coding/C_Language/roguelike/main.c -o CMakeFiles/rogueLike.dir/main.c.s
 
-CMakeFiles/rogueLike.dir/functions.c.o: CMakeFiles/rogueLike.dir/flags.make
-CMakeFiles/rogueLike.dir/functions.c.o: /home/andrew/Documents/Coding/C_Language/roguelike/functions.c
-CMakeFiles/rogueLike.dir/functions.c.o: CMakeFiles/rogueLike.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andrew/Documents/Coding/C_Language/roguelike/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/rogueLike.dir/functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rogueLike.dir/functions.c.o -MF CMakeFiles/rogueLike.dir/functions.c.o.d -o CMakeFiles/rogueLike.dir/functions.c.o -c /home/andrew/Documents/Coding/C_Language/roguelike/functions.c
+CMakeFiles/rogueLike.dir/toolFunctions.c.o: CMakeFiles/rogueLike.dir/flags.make
+CMakeFiles/rogueLike.dir/toolFunctions.c.o: /home/andrew/Documents/Coding/C_Language/roguelike/toolFunctions.c
+CMakeFiles/rogueLike.dir/toolFunctions.c.o: CMakeFiles/rogueLike.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andrew/Documents/Coding/C_Language/roguelike/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/rogueLike.dir/toolFunctions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rogueLike.dir/toolFunctions.c.o -MF CMakeFiles/rogueLike.dir/toolFunctions.c.o.d -o CMakeFiles/rogueLike.dir/toolFunctions.c.o -c /home/andrew/Documents/Coding/C_Language/roguelike/toolFunctions.c
 
-CMakeFiles/rogueLike.dir/functions.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rogueLike.dir/functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andrew/Documents/Coding/C_Language/roguelike/functions.c > CMakeFiles/rogueLike.dir/functions.c.i
+CMakeFiles/rogueLike.dir/toolFunctions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rogueLike.dir/toolFunctions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andrew/Documents/Coding/C_Language/roguelike/toolFunctions.c > CMakeFiles/rogueLike.dir/toolFunctions.c.i
 
-CMakeFiles/rogueLike.dir/functions.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rogueLike.dir/functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andrew/Documents/Coding/C_Language/roguelike/functions.c -o CMakeFiles/rogueLike.dir/functions.c.s
+CMakeFiles/rogueLike.dir/toolFunctions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rogueLike.dir/toolFunctions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andrew/Documents/Coding/C_Language/roguelike/toolFunctions.c -o CMakeFiles/rogueLike.dir/toolFunctions.c.s
+
+CMakeFiles/rogueLike.dir/gameFunctions.c.o: CMakeFiles/rogueLike.dir/flags.make
+CMakeFiles/rogueLike.dir/gameFunctions.c.o: /home/andrew/Documents/Coding/C_Language/roguelike/gameFunctions.c
+CMakeFiles/rogueLike.dir/gameFunctions.c.o: CMakeFiles/rogueLike.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andrew/Documents/Coding/C_Language/roguelike/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/rogueLike.dir/gameFunctions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rogueLike.dir/gameFunctions.c.o -MF CMakeFiles/rogueLike.dir/gameFunctions.c.o.d -o CMakeFiles/rogueLike.dir/gameFunctions.c.o -c /home/andrew/Documents/Coding/C_Language/roguelike/gameFunctions.c
+
+CMakeFiles/rogueLike.dir/gameFunctions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rogueLike.dir/gameFunctions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andrew/Documents/Coding/C_Language/roguelike/gameFunctions.c > CMakeFiles/rogueLike.dir/gameFunctions.c.i
+
+CMakeFiles/rogueLike.dir/gameFunctions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rogueLike.dir/gameFunctions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andrew/Documents/Coding/C_Language/roguelike/gameFunctions.c -o CMakeFiles/rogueLike.dir/gameFunctions.c.s
 
 # Object files for target rogueLike
 rogueLike_OBJECTS = \
 "CMakeFiles/rogueLike.dir/main.c.o" \
-"CMakeFiles/rogueLike.dir/functions.c.o"
+"CMakeFiles/rogueLike.dir/toolFunctions.c.o" \
+"CMakeFiles/rogueLike.dir/gameFunctions.c.o"
 
 # External object files for target rogueLike
 rogueLike_EXTERNAL_OBJECTS =
 
 rogueLike: CMakeFiles/rogueLike.dir/main.c.o
-rogueLike: CMakeFiles/rogueLike.dir/functions.c.o
+rogueLike: CMakeFiles/rogueLike.dir/toolFunctions.c.o
+rogueLike: CMakeFiles/rogueLike.dir/gameFunctions.c.o
 rogueLike: CMakeFiles/rogueLike.dir/build.make
 rogueLike: CMakeFiles/rogueLike.dir/compiler_depend.ts
 rogueLike: CMakeFiles/rogueLike.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/andrew/Documents/Coding/C_Language/roguelike/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable rogueLike"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/andrew/Documents/Coding/C_Language/roguelike/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable rogueLike"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rogueLike.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

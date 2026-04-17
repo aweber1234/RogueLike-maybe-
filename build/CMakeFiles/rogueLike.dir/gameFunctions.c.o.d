@@ -1,5 +1,5 @@
-CMakeFiles/rogueLike.dir/main.c.o: \
- /home/andrew/Documents/Coding/C_Language/roguelike/main.c \
+CMakeFiles/rogueLike.dir/gameFunctions.c.o: \
+ /home/andrew/Documents/Coding/C_Language/roguelike/gameFunctions.c \
  /usr/include/stdc-predef.h \
  /home/andrew/Documents/Coding/C_Language/roguelike/functions.h \
  /usr/include/curses.h /usr/include/ncurses_dll.h \
@@ -41,7 +41,6 @@ CMakeFiles/rogueLike.dir/main.c.o: \
  /usr/include/curses.h \
  /home/andrew/Documents/Coding/C_Language/roguelike/typeDefinitions.h \
  /home/andrew/Documents/Coding/C_Language/roguelike/sharedData.h \
- /usr/include/locale.h /usr/include/x86_64-linux-gnu/bits/locale.h \
  /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
  /usr/include/x86_64-linux-gnu/sys/types.h \
@@ -55,4 +54,8 @@ CMakeFiles/rogueLike.dir/main.c.o: \
  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib-float.h /usr/include/string.h \
+ /usr/include/time.h /usr/include/x86_64-linux-gnu/bits/time.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h

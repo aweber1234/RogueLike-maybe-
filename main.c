@@ -1,16 +1,22 @@
 #include "functions.h"
 #include "typeDefinitions.h"
+#include "sharedData.h"
 #include <locale.h>
 #include <ncursesw/ncurses.h>
+#include <stdio.h>
 #include <stdlib.h>
+
+
+FILE *debugOut = NULL;
 
 int main()
 {
-  MapType map;
+  debugOut = fopen("errors.txt", "w");
+  GameMap map;
   map.width = 100;
   map.height = 30;
   map.size = map.width * map.height;
-  map.tiles = (TileType *)malloc(sizeof(TileType) * map.size);
+  map.tiles = (Tile *)malloc(sizeof(Tile) * map.size);
 
   Player player;
   player.xPos = map.width / 2;
@@ -19,25 +25,9 @@ int main()
 
   WINDOW *mapWin;
 
-  // populates the map with tiles
-  for (int x = 0; x < map.width; x++)
-  {
-    for (int y = 0; y < map.height; y++)
-    {
-      int i = (y * map.width) + x;
-      if (y < map.height / 2)
-      {
-        map.tiles[i].symbol = L'▓';
-      }
-      else
-      {
-        map.tiles[i].symbol = L'░';
-      }
-      map.tiles[i].xPos = x;
-      map.tiles[i].yPos = y;
-    }
-
-  }
+  InitializeMapArray(&map);
+  //MakeRoom(&map, (map.width / 2) - 3, (map.height / 2) - 3, 6, 6);
+  GenerateMap(&map, 12, 12);
 
   setlocale(LC_ALL, "");
   initscr(); /* Start curses mode 		*/
@@ -96,6 +86,6 @@ int main()
 
   delwin(mapWin);
   endwin(); /* End curses mode		  */
-
+  fclose(debugOut);
   return 0;
 }
