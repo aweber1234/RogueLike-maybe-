@@ -1,34 +1,26 @@
 #include "functions.h"
-#include "typeDefinitions.h"
 #include "sharedData.h"
+#include "typeDefinitions.h"
 #include <locale.h>
 #include <ncursesw/ncurses.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <sys/types.h>
+#include <time.h>
+
+
+const int BOTTOM_WIN_LINES = 15;
+const int MAP_COLS = 100;
+const int MAP_LINES = 30;
+const int TOTAL_LINES = MAP_LINES + BOTTOM_WIN_LINES + 2;
+const int TOTAL_COLS = MAP_COLS + 2;
 
 
 FILE *debugOut = NULL;
 
+
 int main()
 {
-  debugOut = fopen("errors.txt", "w");
-  GameMap map;
-  map.width = 100;
-  map.height = 30;
-  map.size = map.width * map.height;
-  map.tiles = (Tile *)malloc(sizeof(Tile) * map.size);
-
-  Player player;
-  player.xPos = map.width / 2;
-  player.yPos = map.height / 2;
-  player.symbol = L'☻';
-
-  WINDOW *mapWin;
-
-  InitializeMapArray(&map);
-  //MakeRoom(&map, (map.width / 2) - 3, (map.height / 2) - 3, 6, 6);
-  GenerateMap(&map, 12, 12);
-
   setlocale(LC_ALL, "");
   initscr(); /* Start curses mode 		*/
   raw();     /* Line buffering disabled	*/
@@ -38,18 +30,29 @@ int main()
   start_color();
   init_pair(1, COLOR_RED, COLOR_BLACK);
 
-  wattron(stdscr, COLOR_PAIR(1));
-  box(stdscr, 0, 0);
+  debugOut = fopen("errors.txt", "w");
+  WINDOW *mapWin;
+  WINDOW *topWin;
+  Player player;
+  GameMap map;
+
   refresh();
+  wresize(stdscr, TOTAL_LINES, TOTAL_COLS);
+  box(stdscr, 0, 0);
+  topWin = derwin(stdscr, MAP_LINES + 2, MAP_COLS + 2, 0, 0);
+  box(topWin, 0, 0);
+  mapWin = derwin(topWin, MAP_LINES, MAP_COLS, 1, 1);
+  //wattron(topWin, COLOR_PAIR(1));
+  // wrefresh(baseWin);
 
-  mapWin = derwin(stdscr, LINES - 2, COLS - 2, 1, 1);
-
+  InitializeMap(&map, MAP_COLS, MAP_LINES);
+  srand(time(0));
+  GenerateMap(&map, 10, 10, 1 , 10);
+  PlayerInit(&player, &map);
   DrawMap(mapWin, &map);
   DrawPlayer(mapWin, &player);
-  wrefresh(mapWin);
 
   int result = 0;
-
   while ((result = getch()) != 'q')
   {
     switch (result)
@@ -67,24 +70,19 @@ int main()
       MovePlayer(&player, 1, 0, &map, mapWin);
       break;
     default:
-      if (result == KEY_RESIZE)
+
+      if (result == KEY_RESIZE && LINES > TOTAL_LINES && COLS > TOTAL_COLS)
       {
         erase();
-        box(stdscr, 0, 0);
-
-        // werase(myWin);
-        wresize(mapWin, LINES - 2, COLS - 2);
+        SetWindows(topWin, mapWin);
         DrawMap(mapWin, &map);
         DrawPlayer(mapWin, &player);
-        wnoutrefresh(stdscr);
-        wnoutrefresh(mapWin);
       };
       break;
     }
     doupdate();
   }
 
-  delwin(mapWin);
   endwin(); /* End curses mode		  */
   fclose(debugOut);
   return 0;

@@ -86,50 +86,98 @@ CMakeFiles/rogueLike.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rogueLike.dir/main.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andrew/Documents/Coding/C_Language/roguelike/main.c -o CMakeFiles/rogueLike.dir/main.c.s
 
-CMakeFiles/rogueLike.dir/toolFunctions.c.o: CMakeFiles/rogueLike.dir/flags.make
-CMakeFiles/rogueLike.dir/toolFunctions.c.o: /home/andrew/Documents/Coding/C_Language/roguelike/toolFunctions.c
-CMakeFiles/rogueLike.dir/toolFunctions.c.o: CMakeFiles/rogueLike.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andrew/Documents/Coding/C_Language/roguelike/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/rogueLike.dir/toolFunctions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rogueLike.dir/toolFunctions.c.o -MF CMakeFiles/rogueLike.dir/toolFunctions.c.o.d -o CMakeFiles/rogueLike.dir/toolFunctions.c.o -c /home/andrew/Documents/Coding/C_Language/roguelike/toolFunctions.c
+CMakeFiles/rogueLike.dir/functionsTools.c.o: CMakeFiles/rogueLike.dir/flags.make
+CMakeFiles/rogueLike.dir/functionsTools.c.o: /home/andrew/Documents/Coding/C_Language/roguelike/functionsTools.c
+CMakeFiles/rogueLike.dir/functionsTools.c.o: CMakeFiles/rogueLike.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andrew/Documents/Coding/C_Language/roguelike/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/rogueLike.dir/functionsTools.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rogueLike.dir/functionsTools.c.o -MF CMakeFiles/rogueLike.dir/functionsTools.c.o.d -o CMakeFiles/rogueLike.dir/functionsTools.c.o -c /home/andrew/Documents/Coding/C_Language/roguelike/functionsTools.c
 
-CMakeFiles/rogueLike.dir/toolFunctions.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rogueLike.dir/toolFunctions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andrew/Documents/Coding/C_Language/roguelike/toolFunctions.c > CMakeFiles/rogueLike.dir/toolFunctions.c.i
+CMakeFiles/rogueLike.dir/functionsTools.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rogueLike.dir/functionsTools.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andrew/Documents/Coding/C_Language/roguelike/functionsTools.c > CMakeFiles/rogueLike.dir/functionsTools.c.i
 
-CMakeFiles/rogueLike.dir/toolFunctions.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rogueLike.dir/toolFunctions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andrew/Documents/Coding/C_Language/roguelike/toolFunctions.c -o CMakeFiles/rogueLike.dir/toolFunctions.c.s
+CMakeFiles/rogueLike.dir/functionsTools.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rogueLike.dir/functionsTools.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andrew/Documents/Coding/C_Language/roguelike/functionsTools.c -o CMakeFiles/rogueLike.dir/functionsTools.c.s
 
-CMakeFiles/rogueLike.dir/gameFunctions.c.o: CMakeFiles/rogueLike.dir/flags.make
-CMakeFiles/rogueLike.dir/gameFunctions.c.o: /home/andrew/Documents/Coding/C_Language/roguelike/gameFunctions.c
-CMakeFiles/rogueLike.dir/gameFunctions.c.o: CMakeFiles/rogueLike.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andrew/Documents/Coding/C_Language/roguelike/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/rogueLike.dir/gameFunctions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rogueLike.dir/gameFunctions.c.o -MF CMakeFiles/rogueLike.dir/gameFunctions.c.o.d -o CMakeFiles/rogueLike.dir/gameFunctions.c.o -c /home/andrew/Documents/Coding/C_Language/roguelike/gameFunctions.c
+CMakeFiles/rogueLike.dir/functionsGame.c.o: CMakeFiles/rogueLike.dir/flags.make
+CMakeFiles/rogueLike.dir/functionsGame.c.o: /home/andrew/Documents/Coding/C_Language/roguelike/functionsGame.c
+CMakeFiles/rogueLike.dir/functionsGame.c.o: CMakeFiles/rogueLike.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andrew/Documents/Coding/C_Language/roguelike/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/rogueLike.dir/functionsGame.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rogueLike.dir/functionsGame.c.o -MF CMakeFiles/rogueLike.dir/functionsGame.c.o.d -o CMakeFiles/rogueLike.dir/functionsGame.c.o -c /home/andrew/Documents/Coding/C_Language/roguelike/functionsGame.c
 
-CMakeFiles/rogueLike.dir/gameFunctions.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rogueLike.dir/gameFunctions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andrew/Documents/Coding/C_Language/roguelike/gameFunctions.c > CMakeFiles/rogueLike.dir/gameFunctions.c.i
+CMakeFiles/rogueLike.dir/functionsGame.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rogueLike.dir/functionsGame.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andrew/Documents/Coding/C_Language/roguelike/functionsGame.c > CMakeFiles/rogueLike.dir/functionsGame.c.i
 
-CMakeFiles/rogueLike.dir/gameFunctions.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rogueLike.dir/gameFunctions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andrew/Documents/Coding/C_Language/roguelike/gameFunctions.c -o CMakeFiles/rogueLike.dir/gameFunctions.c.s
+CMakeFiles/rogueLike.dir/functionsGame.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rogueLike.dir/functionsGame.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andrew/Documents/Coding/C_Language/roguelike/functionsGame.c -o CMakeFiles/rogueLike.dir/functionsGame.c.s
+
+CMakeFiles/rogueLike.dir/functionsMaps.c.o: CMakeFiles/rogueLike.dir/flags.make
+CMakeFiles/rogueLike.dir/functionsMaps.c.o: /home/andrew/Documents/Coding/C_Language/roguelike/functionsMaps.c
+CMakeFiles/rogueLike.dir/functionsMaps.c.o: CMakeFiles/rogueLike.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andrew/Documents/Coding/C_Language/roguelike/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/rogueLike.dir/functionsMaps.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rogueLike.dir/functionsMaps.c.o -MF CMakeFiles/rogueLike.dir/functionsMaps.c.o.d -o CMakeFiles/rogueLike.dir/functionsMaps.c.o -c /home/andrew/Documents/Coding/C_Language/roguelike/functionsMaps.c
+
+CMakeFiles/rogueLike.dir/functionsMaps.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rogueLike.dir/functionsMaps.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andrew/Documents/Coding/C_Language/roguelike/functionsMaps.c > CMakeFiles/rogueLike.dir/functionsMaps.c.i
+
+CMakeFiles/rogueLike.dir/functionsMaps.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rogueLike.dir/functionsMaps.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andrew/Documents/Coding/C_Language/roguelike/functionsMaps.c -o CMakeFiles/rogueLike.dir/functionsMaps.c.s
+
+CMakeFiles/rogueLike.dir/functionsDraw.c.o: CMakeFiles/rogueLike.dir/flags.make
+CMakeFiles/rogueLike.dir/functionsDraw.c.o: /home/andrew/Documents/Coding/C_Language/roguelike/functionsDraw.c
+CMakeFiles/rogueLike.dir/functionsDraw.c.o: CMakeFiles/rogueLike.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andrew/Documents/Coding/C_Language/roguelike/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/rogueLike.dir/functionsDraw.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rogueLike.dir/functionsDraw.c.o -MF CMakeFiles/rogueLike.dir/functionsDraw.c.o.d -o CMakeFiles/rogueLike.dir/functionsDraw.c.o -c /home/andrew/Documents/Coding/C_Language/roguelike/functionsDraw.c
+
+CMakeFiles/rogueLike.dir/functionsDraw.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rogueLike.dir/functionsDraw.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andrew/Documents/Coding/C_Language/roguelike/functionsDraw.c > CMakeFiles/rogueLike.dir/functionsDraw.c.i
+
+CMakeFiles/rogueLike.dir/functionsDraw.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rogueLike.dir/functionsDraw.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andrew/Documents/Coding/C_Language/roguelike/functionsDraw.c -o CMakeFiles/rogueLike.dir/functionsDraw.c.s
+
+CMakeFiles/rogueLike.dir/functionsPlayer.c.o: CMakeFiles/rogueLike.dir/flags.make
+CMakeFiles/rogueLike.dir/functionsPlayer.c.o: /home/andrew/Documents/Coding/C_Language/roguelike/functionsPlayer.c
+CMakeFiles/rogueLike.dir/functionsPlayer.c.o: CMakeFiles/rogueLike.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/andrew/Documents/Coding/C_Language/roguelike/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/rogueLike.dir/functionsPlayer.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rogueLike.dir/functionsPlayer.c.o -MF CMakeFiles/rogueLike.dir/functionsPlayer.c.o.d -o CMakeFiles/rogueLike.dir/functionsPlayer.c.o -c /home/andrew/Documents/Coding/C_Language/roguelike/functionsPlayer.c
+
+CMakeFiles/rogueLike.dir/functionsPlayer.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rogueLike.dir/functionsPlayer.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andrew/Documents/Coding/C_Language/roguelike/functionsPlayer.c > CMakeFiles/rogueLike.dir/functionsPlayer.c.i
+
+CMakeFiles/rogueLike.dir/functionsPlayer.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rogueLike.dir/functionsPlayer.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andrew/Documents/Coding/C_Language/roguelike/functionsPlayer.c -o CMakeFiles/rogueLike.dir/functionsPlayer.c.s
 
 # Object files for target rogueLike
 rogueLike_OBJECTS = \
 "CMakeFiles/rogueLike.dir/main.c.o" \
-"CMakeFiles/rogueLike.dir/toolFunctions.c.o" \
-"CMakeFiles/rogueLike.dir/gameFunctions.c.o"
+"CMakeFiles/rogueLike.dir/functionsTools.c.o" \
+"CMakeFiles/rogueLike.dir/functionsGame.c.o" \
+"CMakeFiles/rogueLike.dir/functionsMaps.c.o" \
+"CMakeFiles/rogueLike.dir/functionsDraw.c.o" \
+"CMakeFiles/rogueLike.dir/functionsPlayer.c.o"
 
 # External object files for target rogueLike
 rogueLike_EXTERNAL_OBJECTS =
 
 rogueLike: CMakeFiles/rogueLike.dir/main.c.o
-rogueLike: CMakeFiles/rogueLike.dir/toolFunctions.c.o
-rogueLike: CMakeFiles/rogueLike.dir/gameFunctions.c.o
+rogueLike: CMakeFiles/rogueLike.dir/functionsTools.c.o
+rogueLike: CMakeFiles/rogueLike.dir/functionsGame.c.o
+rogueLike: CMakeFiles/rogueLike.dir/functionsMaps.c.o
+rogueLike: CMakeFiles/rogueLike.dir/functionsDraw.c.o
+rogueLike: CMakeFiles/rogueLike.dir/functionsPlayer.c.o
 rogueLike: CMakeFiles/rogueLike.dir/build.make
 rogueLike: CMakeFiles/rogueLike.dir/compiler_depend.ts
 rogueLike: CMakeFiles/rogueLike.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/andrew/Documents/Coding/C_Language/roguelike/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable rogueLike"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/andrew/Documents/Coding/C_Language/roguelike/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable rogueLike"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rogueLike.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

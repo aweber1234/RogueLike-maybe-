@@ -6,4 +6,10 @@
 
 extern FILE *debugOut;
 
+extern const int BOTTOM_WIN_LINES;
+extern const int MAP_COLS;
+extern const int MAP_LINES;
+extern const int TOTAL_LINES;
+extern const int TOTAL_COLS;
+
 #endif

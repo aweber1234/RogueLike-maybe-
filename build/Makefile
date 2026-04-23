@@ -136,29 +136,125 @@ rogueLike/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/build
 .PHONY : rogueLike/fast
 
-gameFunctions.o: gameFunctions.c.o
-.PHONY : gameFunctions.o
+functionsDraw.o: functionsDraw.c.o
+.PHONY : functionsDraw.o
 
 # target to build an object file
-gameFunctions.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/gameFunctions.c.o
-.PHONY : gameFunctions.c.o
+functionsDraw.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/functionsDraw.c.o
+.PHONY : functionsDraw.c.o
 
-gameFunctions.i: gameFunctions.c.i
-.PHONY : gameFunctions.i
+functionsDraw.i: functionsDraw.c.i
+.PHONY : functionsDraw.i
 
 # target to preprocess a source file
-gameFunctions.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/gameFunctions.c.i
-.PHONY : gameFunctions.c.i
+functionsDraw.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/functionsDraw.c.i
+.PHONY : functionsDraw.c.i
 
-gameFunctions.s: gameFunctions.c.s
-.PHONY : gameFunctions.s
+functionsDraw.s: functionsDraw.c.s
+.PHONY : functionsDraw.s
 
 # target to generate assembly for a file
-gameFunctions.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/gameFunctions.c.s
-.PHONY : gameFunctions.c.s
+functionsDraw.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/functionsDraw.c.s
+.PHONY : functionsDraw.c.s
+
+functionsGame.o: functionsGame.c.o
+.PHONY : functionsGame.o
+
+# target to build an object file
+functionsGame.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/functionsGame.c.o
+.PHONY : functionsGame.c.o
+
+functionsGame.i: functionsGame.c.i
+.PHONY : functionsGame.i
+
+# target to preprocess a source file
+functionsGame.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/functionsGame.c.i
+.PHONY : functionsGame.c.i
+
+functionsGame.s: functionsGame.c.s
+.PHONY : functionsGame.s
+
+# target to generate assembly for a file
+functionsGame.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/functionsGame.c.s
+.PHONY : functionsGame.c.s
+
+functionsMaps.o: functionsMaps.c.o
+.PHONY : functionsMaps.o
+
+# target to build an object file
+functionsMaps.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/functionsMaps.c.o
+.PHONY : functionsMaps.c.o
+
+functionsMaps.i: functionsMaps.c.i
+.PHONY : functionsMaps.i
+
+# target to preprocess a source file
+functionsMaps.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/functionsMaps.c.i
+.PHONY : functionsMaps.c.i
+
+functionsMaps.s: functionsMaps.c.s
+.PHONY : functionsMaps.s
+
+# target to generate assembly for a file
+functionsMaps.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/functionsMaps.c.s
+.PHONY : functionsMaps.c.s
+
+functionsPlayer.o: functionsPlayer.c.o
+.PHONY : functionsPlayer.o
+
+# target to build an object file
+functionsPlayer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/functionsPlayer.c.o
+.PHONY : functionsPlayer.c.o
+
+functionsPlayer.i: functionsPlayer.c.i
+.PHONY : functionsPlayer.i
+
+# target to preprocess a source file
+functionsPlayer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/functionsPlayer.c.i
+.PHONY : functionsPlayer.c.i
+
+functionsPlayer.s: functionsPlayer.c.s
+.PHONY : functionsPlayer.s
+
+# target to generate assembly for a file
+functionsPlayer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/functionsPlayer.c.s
+.PHONY : functionsPlayer.c.s
+
+functionsTools.o: functionsTools.c.o
+.PHONY : functionsTools.o
+
+# target to build an object file
+functionsTools.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/functionsTools.c.o
+.PHONY : functionsTools.c.o
+
+functionsTools.i: functionsTools.c.i
+.PHONY : functionsTools.i
+
+# target to preprocess a source file
+functionsTools.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/functionsTools.c.i
+.PHONY : functionsTools.c.i
+
+functionsTools.s: functionsTools.c.s
+.PHONY : functionsTools.s
+
+# target to generate assembly for a file
+functionsTools.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/functionsTools.c.s
+.PHONY : functionsTools.c.s
 
 main.o: main.c.o
 .PHONY : main.o
@@ -184,30 +280,6 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/main.c.s
 .PHONY : main.c.s
 
-toolFunctions.o: toolFunctions.c.o
-.PHONY : toolFunctions.o
-
-# target to build an object file
-toolFunctions.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/toolFunctions.c.o
-.PHONY : toolFunctions.c.o
-
-toolFunctions.i: toolFunctions.c.i
-.PHONY : toolFunctions.i
-
-# target to preprocess a source file
-toolFunctions.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/toolFunctions.c.i
-.PHONY : toolFunctions.c.i
-
-toolFunctions.s: toolFunctions.c.s
-.PHONY : toolFunctions.s
-
-# target to generate assembly for a file
-toolFunctions.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/toolFunctions.c.s
-.PHONY : toolFunctions.c.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -218,15 +290,24 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... rogueLike"
-	@echo "... gameFunctions.o"
-	@echo "... gameFunctions.i"
-	@echo "... gameFunctions.s"
+	@echo "... functionsDraw.o"
+	@echo "... functionsDraw.i"
+	@echo "... functionsDraw.s"
+	@echo "... functionsGame.o"
+	@echo "... functionsGame.i"
+	@echo "... functionsGame.s"
+	@echo "... functionsMaps.o"
+	@echo "... functionsMaps.i"
+	@echo "... functionsMaps.s"
+	@echo "... functionsPlayer.o"
+	@echo "... functionsPlayer.i"
+	@echo "... functionsPlayer.s"
+	@echo "... functionsTools.o"
+	@echo "... functionsTools.i"
+	@echo "... functionsTools.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... toolFunctions.o"
-	@echo "... toolFunctions.i"
-	@echo "... toolFunctions.s"
 .PHONY : help
 
 

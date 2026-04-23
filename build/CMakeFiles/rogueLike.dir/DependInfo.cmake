@@ -8,9 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/andrew/Documents/Coding/C_Language/roguelike/gameFunctions.c" "CMakeFiles/rogueLike.dir/gameFunctions.c.o" "gcc" "CMakeFiles/rogueLike.dir/gameFunctions.c.o.d"
+  "/home/andrew/Documents/Coding/C_Language/roguelike/functionsDraw.c" "CMakeFiles/rogueLike.dir/functionsDraw.c.o" "gcc" "CMakeFiles/rogueLike.dir/functionsDraw.c.o.d"
+  "/home/andrew/Documents/Coding/C_Language/roguelike/functionsGame.c" "CMakeFiles/rogueLike.dir/functionsGame.c.o" "gcc" "CMakeFiles/rogueLike.dir/functionsGame.c.o.d"
+  "/home/andrew/Documents/Coding/C_Language/roguelike/functionsMaps.c" "CMakeFiles/rogueLike.dir/functionsMaps.c.o" "gcc" "CMakeFiles/rogueLike.dir/functionsMaps.c.o.d"
+  "/home/andrew/Documents/Coding/C_Language/roguelike/functionsPlayer.c" "CMakeFiles/rogueLike.dir/functionsPlayer.c.o" "gcc" "CMakeFiles/rogueLike.dir/functionsPlayer.c.o.d"
+  "/home/andrew/Documents/Coding/C_Language/roguelike/functionsTools.c" "CMakeFiles/rogueLike.dir/functionsTools.c.o" "gcc" "CMakeFiles/rogueLike.dir/functionsTools.c.o.d"
   "/home/andrew/Documents/Coding/C_Language/roguelike/main.c" "CMakeFiles/rogueLike.dir/main.c.o" "gcc" "CMakeFiles/rogueLike.dir/main.c.o.d"
-  "/home/andrew/Documents/Coding/C_Language/roguelike/toolFunctions.c" "CMakeFiles/rogueLike.dir/toolFunctions.c.o" "gcc" "CMakeFiles/rogueLike.dir/toolFunctions.c.o.d"
   "" "rogueLike" "gcc" "CMakeFiles/rogueLike.dir/link.d"
   )
 

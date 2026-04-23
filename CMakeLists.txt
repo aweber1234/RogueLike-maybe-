@@ -2,7 +2,14 @@ cmake_minimum_required(VERSION 3.31)
 
 project(rogueLike LANGUAGES C)
 
-add_executable(rogueLike main.c toolFunctions.c gameFunctions.c)
+add_executable(rogueLike
+  main.c
+  functionsTools.c
+  functionsGame.c
+  functionsMaps.c
+  functionsDraw.c
+  functionsPlayer.c
+)
 
 target_compile_definitions(rogueLike PRIVATE _XOPEN_SOURCE=700)
 
