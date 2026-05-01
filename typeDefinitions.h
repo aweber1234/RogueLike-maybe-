@@ -14,6 +14,26 @@ typedef enum
   OPEN
 } TileType;
 
+////////////////////////
+
+
+typedef struct
+{
+  int *arrayLocation;
+  int count;
+} IntList;
+
+typedef struct
+{
+  size_t typeSize;
+  int highestItemIndex;
+  IntList freeSpots;
+  int nextIndex;
+} SmartStorage;
+
+
+
+
 typedef struct
 {
   int xPos, yPos;
@@ -39,15 +59,7 @@ typedef struct
   Room *rooms;
 } GameMap;
 
-typedef struct
-{
-  void *componentEntries;
-  size_t componentTypeSize;
-  int highestComponentIndex;
-  int freeSpotsIndex;
-  int freeSpots[256];
-  int nextIndex;
-} ComponentsData;
+
 
 
 #endif

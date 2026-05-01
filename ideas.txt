@@ -1,0 +1,15 @@
+use int list to hold indexes of components for when all comon
+
+
+use a last in first out indexed array to track free spots for when components are expired
+free location array should be 256 ints?
+
+if there are no free spots to use in free location index, use largest last location index and addvance the value by one
+
+
+
+
+
+non-linear array smartStorage manages stores the actual data for a component
+an int list saves the component index in the smart storage array, allowing for quick updating of all components
+index of entity on the non-linear heap storage is id

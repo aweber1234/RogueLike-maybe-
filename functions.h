@@ -26,4 +26,14 @@ void SetWindows(WINDOW *baseWin, WINDOW *mapWin);
 
 int RandRange(int n);
 
+//IntList functions
+IntList IntListConstruct();
+int IntListResize(IntList *list, int newSize);
+void IntListAdd(IntList *list, int item);
+void IntListRemove(IntList *list, int itemIndex);
+
+void SmartStorageInitialize(SmartStorage *data, int storageTypeSize);
+int SmartStorageNextIndex(SmartStorage *data);
+void SmartStorageRemoveAt(SmartStorage *data, int index);
+
 #endif

@@ -1,6 +1,7 @@
 #include "functions.h"
 #include "sharedData.h"
 #include "typeDefinitions.h"
+#include "components.h"
 #include <locale.h>
 #include <ncursesw/ncurses.h>
 #include <stdio.h>
@@ -17,6 +18,37 @@ const int TOTAL_COLS = MAP_COLS + 2;
 
 
 FILE *debugOut = NULL;
+
+int *entities;
+SmartStorage entitiesSS;
+Position *positionComps;
+SmartStorage positionSS;
+Health *healthComps;
+SmartStorage healthSS;
+Weight *weightComps;
+SmartStorage weightSS;
+Agility *agilityComps;
+SmartStorage agilitySS;
+Strength *strengthComps;
+SmartStorage strengthSS;
+Symbol *symbolComps;
+SmartStorage symbolSS;
+
+void MakeGuy()
+{
+  int entityIndex = SmartStorageNextIndex(&entitiesSS);
+  entities[entityIndex] = entityIndex;
+
+  SmartStorageNextIndex(&positionSS);
+  positionComps[entityIndex].x = MAP_COLS / 2;
+  positionComps[entityIndex].y = MAP_LINES / 2;
+  SmartStorageNextIndex(&healthSS);
+  SmartStorageNextIndex(&weightSS);
+  SmartStorageNextIndex(&agilitySS);
+  SmartStorageNextIndex(&strengthSS);
+  SmartStorageNextIndex(&symbolSS);
+}
+
 
 
 int main()
@@ -51,6 +83,26 @@ int main()
   PlayerInit(&player, &map);
   DrawMap(mapWin, &map);
   DrawPlayer(mapWin, &player);
+
+
+  entities = malloc(sizeof(int) * 255);
+  SmartStorageInitialize(&entitiesSS, sizeof(int));
+  positionComps = malloc(sizeof(Position) * 255);
+  SmartStorageInitialize(&positionSS, sizeof(Position));
+  healthComps = malloc(sizeof(Health) * 255);
+  SmartStorageInitialize(&healthSS, sizeof(Health));
+  weightComps = malloc(sizeof(Weight) * 255);
+  SmartStorageInitialize(&weightSS, sizeof(Weight));
+  agilityComps = malloc(sizeof(Agility) * 255);
+  SmartStorageInitialize(&agilitySS, sizeof(Agility));
+  strengthComps = malloc(sizeof(Strength) * 255);
+  SmartStorageInitialize(&strengthSS, sizeof(Strength));
+
+
+
+
+
+
 
   int result = 0;
   while ((result = getch()) != 'q')
