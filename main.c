@@ -24,6 +24,12 @@ SmartStorage entitiesSS;
 Position *positionComps;
 SmartStorage positionSS;
 Health *healthComps;
+#include "typeDefinitions.h"
+#include <ncursesw/ncurses.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <wchar.h>
 SmartStorage healthSS;
 Weight *weightComps;
 SmartStorage weightSS;
@@ -33,6 +39,7 @@ Strength *strengthComps;
 SmartStorage strengthSS;
 Symbol *symbolComps;
 SmartStorage symbolSS;
+
 
 void MakeGuy()
 {

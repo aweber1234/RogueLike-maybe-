@@ -7,23 +7,29 @@
 
 
 
-//function declarations
-//___________________________________________________________
+//function declarations-------------------------------------------
 
+//map functions
 void InitializeMap(GameMap *map, int width, int height);
 void GenerateMap(GameMap *map, int minRooms, int maxRooms, int minRoomSize, int maxRoomSize);
-void DrawMap(WINDOW *thisWin, GameMap *map);
 void MakeRoom(GameMap *map, int xPos, int yPos, int width, int height);
 void MakeHall(GameMap *map, int xstart, int ystart, int xend, int yend);
 void ConnectRooms(GameMap *map);
 
-void MovePlayer(Player *player, int moveX, int moveY, GameMap *map, WINDOW *mapWin);
-void PlayerInit(Player *player, GameMap *map);
+//draw functions
 void DrawTile(WINDOW *mapWin, Tile *tile);
 void DrawPlayer(WINDOW *mapWin, Player *player);
+void DrawMap(WINDOW *thisWin, GameMap *map);
 
+//player functions
+void MovePlayer(Player *player, int moveX, int moveY, GameMap *map, WINDOW *mapWin);
+void PlayerInit(Player *player, GameMap *map);
+
+
+//game setup functions
 void SetWindows(WINDOW *baseWin, WINDOW *mapWin);
 
+//tool functions
 int RandRange(int n);
 
 //IntList functions
@@ -32,6 +38,7 @@ int IntListResize(IntList *list, int newSize);
 void IntListAdd(IntList *list, int item);
 void IntListRemove(IntList *list, int itemIndex);
 
+//smart storage functions
 void SmartStorageInitialize(SmartStorage *data, int storageTypeSize);
 int SmartStorageNextIndex(SmartStorage *data);
 void SmartStorageRemoveAt(SmartStorage *data, int index);
