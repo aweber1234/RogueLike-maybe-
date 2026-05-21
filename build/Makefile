@@ -136,6 +136,30 @@ rogueLike/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/build
 .PHONY : rogueLike/fast
 
+ecsFunctions.o: ecsFunctions.c.o
+.PHONY : ecsFunctions.o
+
+# target to build an object file
+ecsFunctions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/ecsFunctions.c.o
+.PHONY : ecsFunctions.c.o
+
+ecsFunctions.i: ecsFunctions.c.i
+.PHONY : ecsFunctions.i
+
+# target to preprocess a source file
+ecsFunctions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/ecsFunctions.c.i
+.PHONY : ecsFunctions.c.i
+
+ecsFunctions.s: ecsFunctions.c.s
+.PHONY : ecsFunctions.s
+
+# target to generate assembly for a file
+ecsFunctions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rogueLike.dir/build.make CMakeFiles/rogueLike.dir/ecsFunctions.c.s
+.PHONY : ecsFunctions.c.s
+
 functionsDraw.o: functionsDraw.c.o
 .PHONY : functionsDraw.o
 
@@ -290,6 +314,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... rogueLike"
+	@echo "... ecsFunctions.o"
+	@echo "... ecsFunctions.i"
+	@echo "... ecsFunctions.s"
 	@echo "... functionsDraw.o"
 	@echo "... functionsDraw.i"
 	@echo "... functionsDraw.s"

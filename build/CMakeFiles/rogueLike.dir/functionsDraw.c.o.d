@@ -1,7 +1,7 @@
 CMakeFiles/rogueLike.dir/functionsDraw.c.o: \
  /home/andrew/Documents/Coding/C_Language/roguelike/functionsDraw.c \
  /usr/include/stdc-predef.h \
- /home/andrew/Documents/Coding/C_Language/roguelike/functions.h \
+ /home/andrew/Documents/Coding/C_Language/roguelike/components.h \
  /usr/include/curses.h /usr/include/ncurses_dll.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -40,6 +40,9 @@ CMakeFiles/rogueLike.dir/functionsDraw.c.o: \
  /usr/include/x86_64-linux-gnu/bits/endianness.h /usr/include/unctrl.h \
  /usr/include/curses.h \
  /home/andrew/Documents/Coding/C_Language/roguelike/typeDefinitions.h \
+ /home/andrew/Documents/Coding/C_Language/roguelike/ecs.h \
+ /home/andrew/Documents/Coding/C_Language/roguelike/functions.h \
+ /home/andrew/Documents/Coding/C_Language/roguelike/sharedData.h \
  /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
  /usr/include/x86_64-linux-gnu/sys/types.h \

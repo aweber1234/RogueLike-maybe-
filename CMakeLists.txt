@@ -9,6 +9,7 @@ add_executable(rogueLike
   functionsMaps.c
   functionsDraw.c
   functionsPlayer.c
+  ecsFunctions.c
 )
 
 target_compile_definitions(rogueLike PRIVATE _XOPEN_SOURCE=700)

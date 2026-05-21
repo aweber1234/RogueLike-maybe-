@@ -3,26 +3,40 @@
 #define COMPONENTS_H
 
 #include <ncursesw/ncurses.h>
+#include "typeDefinitions.h"
+
+//component bitmasks
+//___________________________________________________________
+#define POSITION_MASK (1 << 0)
+#define SIZE_MASK (1 << 1)
+#define HEALTH_MASK (1 << 2)
+#define SYMBOL_MASK (1 << 3)
+#define AGILITY_MASK (1 << 4)
+#define STRENGTH_MASK (1 << 5)
+#define WEIGHT_MASK (1 << 6)
+
 
 
 // type definitions
 //___________________________________________________________
 
-typedef enum
+typedef struct
 {
-  POSITION_COMPONENT,
-  HEALTH_COMPONENT,
-  WEIGHT_COMPONENT,
-  AGILITY_COMPONENT,
-  STRENGTH_COMPONENT,
-  SYMBOL_COMPONENT,
-  COMPONENT_TYPE_COUNT
-} COMPONENT_TYPE;
+  int *maskData;
+  SmartStorage maskSS;
+} ComponentDataMask;
+
 
 typedef struct
 {
   int x, y, z;
 } Position;
+
+typedef struct
+{
+  Position *positionComps;
+  SmartStorage positionSS;
+} ComponentDataPosition;
 
 typedef struct
 {
@@ -36,8 +50,20 @@ typedef struct
 
 typedef struct
 {
+  Health *healthComps;
+  SmartStorage healthSS;
+} ComponentDataHealth;
+
+typedef struct
+{
   int value;
 } Agility;
+
+typedef struct
+{
+  Agility *agilityComps;
+  SmartStorage agilitySS;
+} ComponentDataAgility;
 
 typedef struct
 {
@@ -46,13 +72,32 @@ typedef struct
 
 typedef struct
 {
+  Strength *strengthComps;
+  SmartStorage strengthSS;
+} ComponentDataStrength;
+
+typedef struct
+{
   int value;
 } Weight;
 
 typedef struct
 {
+  Weight *weightComps;
+  SmartStorage weightSS;
+} ComponentDataWeight;
+
+typedef struct
+{
   wchar_t value;
 } Symbol;
+
+typedef struct
+{
+  Symbol *symbolComps;
+  SmartStorage symbolSS;
+} ComponentDataSymbol;
+
 
 
 #endif

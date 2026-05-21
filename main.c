@@ -1,7 +1,8 @@
+#include "components.h"
+#include "ecs.h"
 #include "functions.h"
 #include "sharedData.h"
 #include "typeDefinitions.h"
-#include "components.h"
 #include <locale.h>
 #include <ncursesw/ncurses.h>
 #include <stdio.h>
@@ -19,44 +20,6 @@ const int TOTAL_COLS = MAP_COLS + 2;
 
 FILE *debugOut = NULL;
 
-int *entities;
-SmartStorage entitiesSS;
-Position *positionComps;
-SmartStorage positionSS;
-Health *healthComps;
-#include "typeDefinitions.h"
-#include <ncursesw/ncurses.h>
-#include <stdlib.h>
-#include <string.h>
-#include <time.h>
-#include <wchar.h>
-SmartStorage healthSS;
-Weight *weightComps;
-SmartStorage weightSS;
-Agility *agilityComps;
-SmartStorage agilitySS;
-Strength *strengthComps;
-SmartStorage strengthSS;
-Symbol *symbolComps;
-SmartStorage symbolSS;
-
-
-void MakeGuy()
-{
-  int entityIndex = SmartStorageNextIndex(&entitiesSS);
-  entities[entityIndex] = entityIndex;
-
-  SmartStorageNextIndex(&positionSS);
-  positionComps[entityIndex].x = MAP_COLS / 2;
-  positionComps[entityIndex].y = MAP_LINES / 2;
-  SmartStorageNextIndex(&healthSS);
-  SmartStorageNextIndex(&weightSS);
-  SmartStorageNextIndex(&agilitySS);
-  SmartStorageNextIndex(&strengthSS);
-  SmartStorageNextIndex(&symbolSS);
-}
-
-
 
 int main()
 {
@@ -69,11 +32,14 @@ int main()
   start_color();
   init_pair(1, COLOR_RED, COLOR_BLACK);
 
-  debugOut = fopen("errors.txt", "w");
+  //debugOut = fopen("errors.txt", "a");
+  //fprintf(debugOut, "test\n");
   WINDOW *mapWin;
   WINDOW *topWin;
-  Player player;
+
   GameMap map;
+  EntitiesData entitiesData;
+  EntityMeta *player;
 
   refresh();
   wresize(stdscr, TOTAL_LINES, TOTAL_COLS);
@@ -87,23 +53,11 @@ int main()
   InitializeMap(&map, MAP_COLS, MAP_LINES);
   srand(time(0));
   GenerateMap(&map, 10, 10, 1 , 10);
-  PlayerInit(&player, &map);
+  InitializeEntitiesData(&entitiesData);
+  player = MakeEntity(&entitiesData, (POSITION_MASK | SYMBOL_MASK));
+  PlayerInit(player, &entitiesData);
   DrawMap(mapWin, &map);
-  DrawPlayer(mapWin, &player);
-
-
-  entities = malloc(sizeof(int) * 255);
-  SmartStorageInitialize(&entitiesSS, sizeof(int));
-  positionComps = malloc(sizeof(Position) * 255);
-  SmartStorageInitialize(&positionSS, sizeof(Position));
-  healthComps = malloc(sizeof(Health) * 255);
-  SmartStorageInitialize(&healthSS, sizeof(Health));
-  weightComps = malloc(sizeof(Weight) * 255);
-  SmartStorageInitialize(&weightSS, sizeof(Weight));
-  agilityComps = malloc(sizeof(Agility) * 255);
-  SmartStorageInitialize(&agilitySS, sizeof(Agility));
-  strengthComps = malloc(sizeof(Strength) * 255);
-  SmartStorageInitialize(&strengthSS, sizeof(Strength));
+  DrawPlayer(mapWin, &entitiesData, player);
 
 
 
@@ -117,27 +71,26 @@ int main()
     switch (result)
     {
     case KEY_UP:
-      MovePlayer(&player, 0, -1, &map, mapWin);
+      MoveEntity(player, 0, -1, &map, mapWin, &entitiesData);
       break;
     case KEY_DOWN:
-      MovePlayer(&player, 0, 1, &map, mapWin);
+      MoveEntity(player, 0, 1, &map, mapWin, &entitiesData);
       break;
     case KEY_LEFT:
-      MovePlayer(&player, -1, 0, &map, mapWin);
+      MoveEntity(player, -1, 0, &map, mapWin, &entitiesData);
       break;
     case KEY_RIGHT:
-      MovePlayer(&player, 1, 0, &map, mapWin);
+      MoveEntity(player, 1, 0, &map, mapWin, &entitiesData);
       break;
     default:
-
-      if (result == KEY_RESIZE && LINES > TOTAL_LINES && COLS > TOTAL_COLS)
-      {
-        erase();
-        SetWindows(topWin, mapWin);
-        DrawMap(mapWin, &map);
-        DrawPlayer(mapWin, &player);
-      };
       break;
+    }
+    if (result == KEY_RESIZE && LINES > TOTAL_LINES && COLS > TOTAL_COLS)
+    {
+      erase();
+      SetWindows(topWin, mapWin);
+      DrawMap(mapWin, &map);
+      DrawPlayer(mapWin, &entitiesData, player);
     }
     doupdate();
   }

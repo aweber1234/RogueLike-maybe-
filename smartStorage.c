@@ -34,7 +34,7 @@ void SmartStorageRemoveAt(SmartStorage *data, int index)
 {
   if (index < data->highestItemIndex)
   {
-    IntListAdd(&data->freeSpots, index);
+    IntListAddItem(&data->freeSpots, index);
   }
   else if (index == data->highestItemIndex)
   {

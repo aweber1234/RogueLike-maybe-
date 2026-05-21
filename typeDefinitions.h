@@ -17,6 +17,7 @@ typedef enum
 ////////////////////////
 
 
+
 typedef struct
 {
   int *arrayLocation;

@@ -2,7 +2,7 @@ CMakeFiles/rogueLike.dir/functionsMaps.c.o: \
  /home/andrew/Documents/Coding/C_Language/roguelike/functionsMaps.c \
  /usr/include/stdc-predef.h \
  /home/andrew/Documents/Coding/C_Language/roguelike/functions.h \
- /usr/include/curses.h /usr/include/ncurses_dll.h \
+ /home/andrew/Documents/Coding/C_Language/roguelike/ecs.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -18,7 +18,8 @@ CMakeFiles/rogueLike.dir/functionsMaps.c.o: \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-least.h /usr/include/stdio.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-least.h /usr/include/curses.h \
+ /usr/include/ncurses_dll.h /usr/include/stdio.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \

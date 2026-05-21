@@ -1,37 +1,25 @@
+#include "components.h"
+#include "ecs.h"
 #include "functions.h"
-#include "typeDefinitions.h"
+#include "sharedData.h"
 #include <ncursesw/ncurses.h>
 
-
-void PlayerInit(Player *player, GameMap *map)
+void PlayerInit(EntityMeta *player, EntitiesData *data)
 {
-  player->xPos = map->width / 2;
-  player->yPos = map->height / 2;
-  player->symbol = L'☻';
-}
-
-void MovePlayer(Player *player, int moveX, int moveY, GameMap *map,
-                WINDOW *mapWin)
-{
-  int newX = player->xPos + moveX;
-  int newY = player->yPos + moveY;
-  int index = (newY * map->width) + newX;
-
-  if (newX < map->width && newY < map->height && newX >= 0 && newY >= 0 &&
-    (map->tiles[index].type != WALL))
+  ComponentColumn *positionColumn = GetComponentColumn(data, player, POSITION_MASK);
+  ComponentColumn *symbolColumn = GetComponentColumn(data, player, SYMBOL_MASK);
+  if (positionColumn == NULL || symbolColumn == NULL)
   {
-    int oldX = player->xPos;
-    int oldY = player->yPos;
-
-    player->xPos = newX;
-    player->yPos = newY;
-
-    DrawPlayer(mapWin, player);
-
-    DrawTile(mapWin, &map->tiles[(oldY * map->width) + oldX]);
-
-    wnoutrefresh(mapWin);
+    fprintf(debugOut,
+            "(PlayerInit) NULL pointer for symbol or position columns!");
+    fflush(debugOut);
+    return;
   }
+
+  Symbol *symbol = &((Symbol *)symbolColumn->entityRow)[player->rowIndex];
+  Position *position = &((Position *)positionColumn->entityRow)[player->rowIndex];
+
+  position->x = MAP_COLS / 2;
+  position->y = MAP_LINES / 2;
+  symbol->value = L'☻';
 }
-
-

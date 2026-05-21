@@ -1,5 +1,6 @@
-#include <stdlib.h>
 #include "functions.h"
+#include <stddef.h>
+#include <stdlib.h>
 
 int RandRange(int n)
 {
@@ -12,4 +13,9 @@ int RandRange(int n)
     ;
 
   return r % n;
+}
+
+void *VoidIndexTo(void *start, int index, size_t typeSize)
+{
+  return (char *)start + (index * typeSize);
 }

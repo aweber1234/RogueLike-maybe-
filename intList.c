@@ -47,7 +47,7 @@ int IntListResize(IntList *list, int newSize)
   return 1;
 }
 
-void IntListAdd(IntList *list, int item)
+void IntListAddItem(IntList *list, int item)
 {
   if (list->count % 256 == 0)
   {
@@ -61,6 +61,22 @@ void IntListAdd(IntList *list, int item)
 
   list->arrayLocation[list->count] = item;
   list->count++;
+}
+
+void IntListRemoveFast(IntList *list, int itemIndex)
+{
+  if (itemIndex < list->count && itemIndex > -1)
+  {
+    if(itemIndex < list->count - 1)
+    {
+      list->arrayLocation[itemIndex] = list->arrayLocation[list->count - 1];
+    }
+    list->count--;
+  }
+  else
+  {
+    fprintf(debugOut, "Item index does not exist!\n");
+  }
 }
 
 void IntListRemove(IntList *list, int itemIndex)

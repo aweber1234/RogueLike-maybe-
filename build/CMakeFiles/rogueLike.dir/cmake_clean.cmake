@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/rogueLike.dir/link.d"
+  "CMakeFiles/rogueLike.dir/ecsFunctions.c.o"
+  "CMakeFiles/rogueLike.dir/ecsFunctions.c.o.d"
   "CMakeFiles/rogueLike.dir/functionsDraw.c.o"
   "CMakeFiles/rogueLike.dir/functionsDraw.c.o.d"
   "CMakeFiles/rogueLike.dir/functionsGame.c.o"

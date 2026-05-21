@@ -8,6 +8,7 @@ rogueLike: \
   CMakeFiles/rogueLike.dir/functionsMaps.c.o \
   CMakeFiles/rogueLike.dir/functionsDraw.c.o \
   CMakeFiles/rogueLike.dir/functionsPlayer.c.o \
+  CMakeFiles/rogueLike.dir/ecsFunctions.c.o \
   /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libncursesw.so \
   /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libncursesw.so \
   /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libncursesw.so \
@@ -52,6 +53,8 @@ CMakeFiles/rogueLike.dir/functionsMaps.c.o:
 CMakeFiles/rogueLike.dir/functionsDraw.c.o:
 
 CMakeFiles/rogueLike.dir/functionsPlayer.c.o:
+
+CMakeFiles/rogueLike.dir/ecsFunctions.c.o:
 
 /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libncursesw.so:
 
