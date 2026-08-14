@@ -9,7 +9,7 @@
 // function declarations-------------------------------------------
 
 // ecs functions
-EntityTable* GetArchetypeTable(EntitiesData *data, uint16_t archetypeMask);
+EntityTable *GetArchetypeTable(EntitiesData *data, uint16_t archetypeMask);
 bool ArchetypeExists(EntitiesData *entities, uint16_t archetypeMask);
 bool EntityHasComponent(EntityMeta *entity, uint16_t componentMask);
 void InitializeEntitiesData(EntitiesData *entities);
@@ -17,7 +17,8 @@ int IncreaseArchetypeTablesSize(EntitiesData *entities, uint16_t increaseBy);
 void SetArchetypeTable(EntityTable *table, uint16_t archetypeMask);
 int MakeArchetype(EntitiesData *entities, uint16_t archetypeMask);
 int IncreaseEntityTableCapacity(EntityTable *table, uint16_t increaseBy);
-ComponentColumn *GetComponentColumn(EntitiesData *data, EntityMeta *entity, uint16_t componentMask);
+ComponentColumn *GetComponentColumn(EntitiesData *data, EntityMeta *entity,
+                                    uint16_t componentMask);
 EntityMeta *MakeEntity(EntitiesData *entities, uint16_t archetypeMask);
 
 // map functions
@@ -29,9 +30,9 @@ void MakeHall(GameMap *map, int xstart, int ystart, int xend, int yend);
 void ConnectRooms(GameMap *map);
 
 // draw functions
-void DrawTile(WINDOW *mapWin, Tile *tile);
-void DrawPlayer(WINDOW *mapWin, EntitiesData *data, EntityMeta *player);
-void DrawMap(WINDOW *thisWin, GameMap *map);
+void DrawTile(Tile *tile);
+void DrawPlayer(EntitiesData *data, EntityMeta *player);
+void DrawMap(GameMap *map);
 
 // player functions
 void PlayerInit(EntityMeta *player, EntitiesData *data);
@@ -39,10 +40,10 @@ void PlayerInit(EntityMeta *player, EntitiesData *data);
 // game operation
 void NextGameTurn();
 void MoveEntity(EntityMeta *entity, int moveX, int moveY, GameMap *map,
-                WINDOW *mapWin, EntitiesData *data);
+                EntitiesData *data);
 
 // game setup
-void SetWindows(WINDOW *baseWin, WINDOW *mapWin);
+void SetWindows();
 
 // tool functions
 int RandRange(int n);

@@ -4,17 +4,21 @@
 #include "sharedData.h"
 #include <ncursesw/ncurses.h>
 
-void SetWindows(WINDOW *baseWin, WINDOW *mapWin)
+void SetWindows()
 {
   wresize(stdscr, TOTAL_LINES, TOTAL_COLS);
   box(stdscr, 0, 0);
-  wresize(baseWin, MAP_LINES + 2, MAP_COLS + 2);
-  box(baseWin, 0, 0);
+  wresize(topWin, MAP_LINES + 2, MAP_COLS + 2);
+  box(topWin, 0, 0);
   wresize(mapWin, MAP_LINES, MAP_COLS);
 }
 
+
+
+
+
 void MoveEntity(EntityMeta *entity, int moveX, int moveY, GameMap *map,
-                WINDOW *mapWin, EntitiesData *data)
+                EntitiesData *data)
 {
   ComponentColumn *positionColumn =
       GetComponentColumn(data, entity, POSITION_MASK);
@@ -25,7 +29,8 @@ void MoveEntity(EntityMeta *entity, int moveX, int moveY, GameMap *map,
     return;
   }
 
-  Position *position = &((Position *)positionColumn->entityRow)[entity->rowIndex];
+  Position *position =
+      &((Position *)positionColumn->entityRow)[entity->rowIndex];
 
   int newX = position->x + moveX;
   int newY = position->y + moveY;
@@ -40,9 +45,9 @@ void MoveEntity(EntityMeta *entity, int moveX, int moveY, GameMap *map,
     position->x = newX;
     position->y = newY;
 
-    DrawPlayer(mapWin, data, entity);
+    DrawPlayer(data, entity);
 
-    DrawTile(mapWin, &map->tiles[(oldY * map->width) + oldX]);
+    DrawTile(&map->tiles[(oldY * map->width) + oldX]);
 
     wnoutrefresh(mapWin);
   }

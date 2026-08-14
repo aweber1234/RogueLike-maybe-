@@ -9,22 +9,22 @@
 #include <time.h>
 #include <wchar.h>
 
-void DrawMap(WINDOW *mapWin, GameMap *map)
+void DrawMap(GameMap *map)
 {
   for (int i = 0; i < map->size; i++)
   {
-    DrawTile(mapWin, &map->tiles[i]);
+    DrawTile(&map->tiles[i]);
   }
 }
 
-void DrawTile(WINDOW *mapWin, Tile *tile)
+void DrawTile(Tile *tile)
 {
   cchar_t toDraw;
   setcchar(&toDraw, &tile->symbol, 0, 0, NULL);
   mvwadd_wch(mapWin, tile->yPos, tile->xPos, &toDraw);
 }
 
-void DrawPlayer(WINDOW *mapWin, EntitiesData *data, EntityMeta *player)
+void DrawPlayer(EntitiesData *data, EntityMeta *player)
 {
   ComponentColumn *symbolColumn = GetComponentColumn(data, player, SYMBOL_MASK);
   ComponentColumn *positionColumn =

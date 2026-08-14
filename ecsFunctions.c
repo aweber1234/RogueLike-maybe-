@@ -7,6 +7,10 @@
 #include <stdlib.h>
 #include <string.h>
 
+
+/**
+ * Makes entity based on an archetype mask and returns pointer to its EntityMeta.
+ */
 EntityMeta *MakeEntity(EntitiesData *entities, uint16_t archetypeMask)
 {
   if (!ArchetypeExists(entities, archetypeMask))
